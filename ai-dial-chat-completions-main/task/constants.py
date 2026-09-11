@@ -1,0 +1,8 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+DEFAULT_SYSTEM_PROMPT = "You are an assistant who answers concisely and informatively."
+DIAL_ENDPOINT = os.getenv('DIAL_API_BASE', 'https://ai-proxy.lab.epam.com')
+API_KEY = os.getenv('DIAL_API_KEY', '')
